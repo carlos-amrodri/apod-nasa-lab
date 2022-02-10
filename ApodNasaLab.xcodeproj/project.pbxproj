@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E698D7327B52F900079137F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D7227B52F900079137F /* AppDelegate.swift */; };
+		3E698D7527B52F900079137F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D7427B52F900079137F /* SceneDelegate.swift */; };
+		3E698D7C27B52F910079137F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E698D7B27B52F910079137F /* Assets.xcassets */; };
+		3E698D7F27B52F910079137F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E698D7D27B52F910079137F /* LaunchScreen.storyboard */; };
+		3E698D8927B530160079137F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D8827B530160079137F /* HomeView.swift */; };
+		3E698D8D27B530280079137F /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D8C27B530280079137F /* HomeInteractor.swift */; };
+		3E698D9027B5303C0079137F /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D8F27B5303C0079137F /* HomePresenter.swift */; };
+		3E698D9327B530710079137F /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D9227B530710079137F /* HomeEntity.swift */; };
+		3E698D9627B530920079137F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D9527B530920079137F /* HomeRouter.swift */; };
+		3E698D9E27B56DA50079137F /* ApodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D9D27B56DA50079137F /* ApodService.swift */; };
+		3E698DA327B5BE1D0079137F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698DA227B5BE1D0079137F /* Extensions.swift */; };
+		3E698DA627B5C0DD0079137F /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698DA527B5C0DD0079137F /* CustomError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E698D6F27B52F900079137F /* ApodNasaLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApodNasaLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E698D7227B52F900079137F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E698D7427B52F900079137F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E698D7B27B52F910079137F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E698D7E27B52F910079137F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E698D8027B52F910079137F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E698D8827B530160079137F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3E698D8C27B530280079137F /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		3E698D8F27B5303C0079137F /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		3E698D9227B530710079137F /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		3E698D9527B530920079137F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		3E698D9D27B56DA50079137F /* ApodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodService.swift; sourceTree = "<group>"; };
+		3E698DA227B5BE1D0079137F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3E698DA527B5C0DD0079137F /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E698D6C27B52F900079137F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E698D6627B52F900079137F = {
+			isa = PBXGroup;
+			children = (
+				3E698D7127B52F900079137F /* ApodNasaLab */,
+				3E698D7027B52F900079137F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E698D7027B52F900079137F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E698D6F27B52F900079137F /* ApodNasaLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E698D7127B52F900079137F /* ApodNasaLab */ = {
+			isa = PBXGroup;
+			children = (
+				3E698D7227B52F900079137F /* AppDelegate.swift */,
+				3E698D7427B52F900079137F /* SceneDelegate.swift */,
+				3E698D8727B52FE40079137F /* Home */,
+				3E698D9C27B56D6A0079137F /* Services */,
+				3E698DA127B5BDE80079137F /* Utilities */,
+				3E698D7B27B52F910079137F /* Assets.xcassets */,
+				3E698D7D27B52F910079137F /* LaunchScreen.storyboard */,
+				3E698D8027B52F910079137F /* Info.plist */,
+			);
+			path = ApodNasaLab;
+			sourceTree = "<group>";
+		};
+		3E698D8727B52FE40079137F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3E698D8827B530160079137F /* HomeView.swift */,
+				3E698D8C27B530280079137F /* HomeInteractor.swift */,
+				3E698D8F27B5303C0079137F /* HomePresenter.swift */,
+				3E698D9227B530710079137F /* HomeEntity.swift */,
+				3E698D9527B530920079137F /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3E698D9C27B56D6A0079137F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3E698D9D27B56DA50079137F /* ApodService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E698DA127B5BDE80079137F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3E698DA227B5BE1D0079137F /* Extensions.swift */,
+				3E698DA527B5C0DD0079137F /* CustomError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E698D6E27B52F900079137F /* ApodNasaLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E698D8327B52F910079137F /* Build configuration list for PBXNativeTarget "ApodNasaLab" */;
+			buildPhases = (
+				3E698D6B27B52F900079137F /* Sources */,
+				3E698D6C27B52F900079137F /* Frameworks */,
+				3E698D6D27B52F900079137F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApodNasaLab;
+			productName = ApodNasaLab;
+			productReference = 3E698D6F27B52F900079137F /* ApodNasaLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E698D6727B52F900079137F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					3E698D6E27B52F900079137F = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 3E698D6A27B52F900079137F /* Build configuration list for PBXProject "ApodNasaLab" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E698D6627B52F900079137F;
+			productRefGroup = 3E698D7027B52F900079137F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E698D6E27B52F900079137F /* ApodNasaLab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E698D6D27B52F900079137F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E698D7F27B52F910079137F /* LaunchScreen.storyboard in Resources */,
+				3E698D7C27B52F910079137F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E698D6B27B52F900079137F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E698D8927B530160079137F /* HomeView.swift in Sources */,
+				3E698DA327B5BE1D0079137F /* Extensions.swift in Sources */,
+				3E698D9E27B56DA50079137F /* ApodService.swift in Sources */,
+				3E698D9327B530710079137F /* HomeEntity.swift in Sources */,
+				3E698D7327B52F900079137F /* AppDelegate.swift in Sources */,
+				3E698DA627B5C0DD0079137F /* CustomError.swift in Sources */,
+				3E698D9027B5303C0079137F /* HomePresenter.swift in Sources */,
+				3E698D9627B530920079137F /* HomeRouter.swift in Sources */,
+				3E698D8D27B530280079137F /* HomeInteractor.swift in Sources */,
+				3E698D7527B52F900079137F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E698D7D27B52F910079137F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E698D7E27B52F910079137F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E698D8127B52F910079137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E698D8227B52F910079137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E698D8427B52F910079137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPK2Q6VUS9;
+				INFOPLIST_FILE = ApodNasaLab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlos.ApodNasaLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E698D8527B52F910079137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPK2Q6VUS9;
+				INFOPLIST_FILE = ApodNasaLab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlos.ApodNasaLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E698D6A27B52F900079137F /* Build configuration list for PBXProject "ApodNasaLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E698D8127B52F910079137F /* Debug */,
+				3E698D8227B52F910079137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E698D8327B52F910079137F /* Build configuration list for PBXNativeTarget "ApodNasaLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E698D8427B52F910079137F /* Debug */,
+				3E698D8527B52F910079137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E698D6727B52F900079137F /* Project object */;
+}
