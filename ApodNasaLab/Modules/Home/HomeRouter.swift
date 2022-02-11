@@ -15,7 +15,7 @@ protocol HomeRouterProtocol {
     
     static func createModule() -> HomeRouterProtocol
 
-    func navigateToDetail()
+    func navigateToDetail(apod : Apod, context : UIViewController)
 }
 
 class HomeRouter: HomeRouterProtocol {
@@ -32,6 +32,7 @@ class HomeRouter: HomeRouterProtocol {
         view.presenter = presenter
         presenter.view = view
         presenter.interactor = interactor
+        presenter.router = router
         
         interactor.presenter = presenter
         
@@ -39,8 +40,9 @@ class HomeRouter: HomeRouterProtocol {
         return router
     }
     
-    func navigateToDetail() {
-        
+    func navigateToDetail(apod : Apod, context : UIViewController) {
+        let vc = DetailView(apod: apod)
+        context.navigationController?.pushViewController(vc, animated: true)
     }
     
     

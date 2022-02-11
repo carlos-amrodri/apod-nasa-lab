@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 protocol HomePresenterProtocol {
@@ -14,6 +15,7 @@ protocol HomePresenterProtocol {
     var interactor : HomeInteractorProtocol? {get set}
 
     func reciveDidRequestApod(wit result: Result<[Apod], CustomError>)
+    func navigateToDetail(with apodSelected : Apod, context : UIViewController)
 }
 
 
@@ -33,6 +35,10 @@ class HomePresenter : HomePresenterProtocol {
         case .failure(let error) :
             view?.showErrorMessage(error: error)
         }
+    }
+    
+    func navigateToDetail(with apodSelected : Apod, context : UIViewController){
+        router?.navigateToDetail(apod: apodSelected, context: context)
     }
     
 }

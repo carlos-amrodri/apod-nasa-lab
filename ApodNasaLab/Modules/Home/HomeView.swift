@@ -66,4 +66,9 @@ class HomeView : UIViewController, HomeViewProtocol, UITableViewDelegate, UITabl
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let apod = apodList[indexPath.row]
+        presenter?.navigateToDetail(with: apod, context: self)
+    }
+    
 }
