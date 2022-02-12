@@ -41,7 +41,8 @@ class HomeRouter: HomeRouterProtocol {
     }
     
     func navigateToDetail(apod : Apod, context : UIViewController) {
-        let vc = DetailView(apod: apod)
+        let routerDetail = DetailRouter.createModule(with: apod)
+        guard let vc = routerDetail.entry else { return  }
         context.navigationController?.pushViewController(vc, animated: true)
     }
     
