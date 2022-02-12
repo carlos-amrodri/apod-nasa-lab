@@ -42,12 +42,26 @@ class DetailPresenter: DetailPresenterProtocol {
     }
     
     func getImage(){
-        if apod.media_type == .image {
+        switch apod.media_type {
+        case .image :
             guard let url = URL(string: apod.url) else {return}
             interactor?.loadDataImage(with: url)
+        case .video :
+            view.showPlayerView(with: getIdVideo())
         }
     }
     
+    
+    private func getIdVideo() -> String {
+        let urlArray = apod.url.components(separatedBy: "embed/")
+        let urlCut = urlArray[1]
+        if let index = urlCut.lastIndex(of: "?"){
+            let sub = urlCut[..<index]
+            return String(sub)
+        }
+        return ""
+        
+    }
 
     
 

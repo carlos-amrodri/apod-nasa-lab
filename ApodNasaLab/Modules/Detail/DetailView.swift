@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 protocol DetailViewProtocol {
     var presenter : DetailPresenterProtocol? {get set}
     
     func showImage(with image : UIImage)
+    func showPlayerView(with id: String)
     func updateLabelsText(title:String, detail:String)
 }
 
@@ -21,6 +23,7 @@ class DetailView: UIViewController, DetailViewProtocol {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var apodImage: UIImageView!
     @IBOutlet weak var nasaBackImage: UIImageView!
+    @IBOutlet var playerView : YTPlayerView!
     
     var presenter: DetailPresenterProtocol?
     
@@ -44,6 +47,7 @@ class DetailView: UIViewController, DetailViewProtocol {
     func showImage(with image : UIImage){
         DispatchQueue.main.async {
             self.apodImage.image = image
+            self.playerView.isHidden = true
             UIView.animate(withDuration: 0.8) {
                 self.nasaBackImage.alpha = 0
                 self.apodImage.isHidden = false
@@ -56,5 +60,11 @@ class DetailView: UIViewController, DetailViewProtocol {
         }
     }
     
+    func showPlayerView(with id: String){
+        playerView.load(withVideoId: id)
+        nasaBackImage.isHidden = true
+        apodImage.isHidden = true
+        playerView.isHidden = false
+    }
 
 }

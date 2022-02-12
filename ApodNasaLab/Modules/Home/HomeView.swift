@@ -22,6 +22,14 @@ class HomeView : UIViewController, HomeViewProtocol, UITableViewDelegate, UITabl
     
     var apodList : [Apod] = []
     
+    var activityIndicator : UIActivityIndicatorView = {
+        let activity = UIActivityIndicatorView(style: .large)
+        activity.color = .white
+        activity.isHidden = false
+        activity.startAnimating()
+        return activity
+    }()
+    
     private let tableView : UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -34,12 +42,7 @@ class HomeView : UIViewController, HomeViewProtocol, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(tableView)
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        self.title = "NASA Apods"
+        setupViews()
     }
     
     override func viewDidLayoutSubviews() {
@@ -51,11 +54,25 @@ class HomeView : UIViewController, HomeViewProtocol, UITableViewDelegate, UITabl
         DispatchQueue.main.async {
             self.apodList = apodList
             self.tableView.reloadData()
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
         }
     }
     
     func showErrorMessage(error: CustomError) {
         print("ops hay error: \(error)")
+    }
+    
+    private func setupViews(){
+        view.addSubview(tableView)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        self.title = "NASA Apods"
+        
+        activityIndicator.center = self.view.center
+        self.view.addSubview(activityIndicator)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

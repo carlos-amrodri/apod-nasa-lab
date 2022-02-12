@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E98481B946205DAEA81D86 /* Pods_ApodNasaLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC7CD661E61155C169EE0B /* Pods_ApodNasaLab.framework */; };
 		3E698D7327B52F900079137F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D7227B52F900079137F /* AppDelegate.swift */; };
 		3E698D7527B52F900079137F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E698D7427B52F900079137F /* SceneDelegate.swift */; };
 		3E698D7C27B52F910079137F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E698D7B27B52F910079137F /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21946F10AAA13EF979011699 /* Pods-ApodNasaLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApodNasaLab.debug.xcconfig"; path = "Target Support Files/Pods-ApodNasaLab/Pods-ApodNasaLab.debug.xcconfig"; sourceTree = "<group>"; };
 		3E698D6F27B52F900079137F /* ApodNasaLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApodNasaLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E698D7227B52F900079137F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E698D7427B52F900079137F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		3EE6A76B27B7212F00AFB92C /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		3EE6A76E27B7214100AFB92C /* DetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
 		3EE6A77127B7215100AFB92C /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		63EC7CD661E61155C169EE0B /* Pods_ApodNasaLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApodNasaLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7241D597DF04A0B053EF3A /* Pods-ApodNasaLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApodNasaLab.release.xcconfig"; path = "Target Support Files/Pods-ApodNasaLab/Pods-ApodNasaLab.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E98481B946205DAEA81D86 /* Pods_ApodNasaLab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 			children = (
 				3E698D7127B52F900079137F /* ApodNasaLab */,
 				3E698D7027B52F900079137F /* Products */,
+				BF44EFBB71A949961EF7E221 /* Pods */,
+				9A8661DB0CF39C861E9864EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,24 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		9A8661DB0CF39C861E9864EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63EC7CD661E61155C169EE0B /* Pods_ApodNasaLab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF44EFBB71A949961EF7E221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21946F10AAA13EF979011699 /* Pods-ApodNasaLab.debug.xcconfig */,
+				CB7241D597DF04A0B053EF3A /* Pods-ApodNasaLab.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E698D8327B52F910079137F /* Build configuration list for PBXNativeTarget "ApodNasaLab" */;
 			buildPhases = (
+				1C1B2E301C7FC5B1AC9F22BA /* [CP] Check Pods Manifest.lock */,
 				3E698D6B27B52F900079137F /* Sources */,
 				3E698D6C27B52F900079137F /* Frameworks */,
 				3E698D6D27B52F900079137F /* Resources */,
+				E1E6DE9BE34E44353A69CD57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +234,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C1B2E301C7FC5B1AC9F22BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApodNasaLab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E6DE9BE34E44353A69CD57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApodNasaLab/Pods-ApodNasaLab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApodNasaLab/Pods-ApodNasaLab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApodNasaLab/Pods-ApodNasaLab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E698D6B27B52F900079137F /* Sources */ = {
@@ -363,6 +432,7 @@
 		};
 		3E698D8427B52F910079137F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21946F10AAA13EF979011699 /* Pods-ApodNasaLab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +452,7 @@
 		};
 		3E698D8527B52F910079137F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7241D597DF04A0B053EF3A /* Pods-ApodNasaLab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

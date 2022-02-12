@@ -13,6 +13,7 @@
                 <outlet property="apodImage" destination="kMz-zz-qTA" id="qZP-Ln-YbC"/>
                 <outlet property="descriptionLabel" destination="2oH-jj-x9W" id="Hsu-XF-m3s"/>
                 <outlet property="nasaBackImage" destination="RXH-oF-4VW" id="9XI-AA-ycP"/>
+                <outlet property="playerView" destination="rGR-3i-Jd5" id="1Kp-cf-2CA"/>
                 <outlet property="titleLabel" destination="dfF-0m-hFB" id="zJ2-tZ-j7v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,18 +32,26 @@
                         <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kMz-zz-qTA">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
                         </imageView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGR-3i-Jd5" customClass="YTPlayerView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="kMz-zz-qTA" firstAttribute="leading" secondItem="vG1-WO-XHQ" secondAttribute="leading" id="0lc-Ul-iie"/>
                         <constraint firstItem="RXH-oF-4VW" firstAttribute="top" secondItem="vG1-WO-XHQ" secondAttribute="top" id="1M3-bf-4AM"/>
+                        <constraint firstAttribute="trailing" secondItem="rGR-3i-Jd5" secondAttribute="trailing" id="3NQ-Xj-GJv"/>
                         <constraint firstItem="kMz-zz-qTA" firstAttribute="top" secondItem="vG1-WO-XHQ" secondAttribute="top" id="GBf-Q8-g01"/>
                         <constraint firstItem="RXH-oF-4VW" firstAttribute="leading" secondItem="vG1-WO-XHQ" secondAttribute="leading" id="GDi-B4-fHZ"/>
+                        <constraint firstItem="rGR-3i-Jd5" firstAttribute="top" secondItem="vG1-WO-XHQ" secondAttribute="top" id="GOT-fe-iFX"/>
                         <constraint firstAttribute="height" constant="230" id="QOs-fv-X1M"/>
                         <constraint firstAttribute="trailing" secondItem="RXH-oF-4VW" secondAttribute="trailing" id="SEf-ok-dth"/>
                         <constraint firstAttribute="bottom" secondItem="RXH-oF-4VW" secondAttribute="bottom" id="Vhb-RV-Hsg"/>
                         <constraint firstAttribute="trailing" secondItem="kMz-zz-qTA" secondAttribute="trailing" id="fLP-lp-Wc3"/>
                         <constraint firstAttribute="bottom" secondItem="kMz-zz-qTA" secondAttribute="bottom" id="ffY-Vy-4Fn"/>
+                        <constraint firstAttribute="bottom" secondItem="rGR-3i-Jd5" secondAttribute="bottom" id="r19-sj-QdW"/>
+                        <constraint firstItem="rGR-3i-Jd5" firstAttribute="leading" secondItem="vG1-WO-XHQ" secondAttribute="leading" id="sIL-Pw-seU"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfF-0m-hFB">
