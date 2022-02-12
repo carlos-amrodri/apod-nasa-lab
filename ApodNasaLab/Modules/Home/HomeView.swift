@@ -26,6 +26,7 @@ class HomeView : UIViewController, HomeViewProtocol, UITableViewDelegate, UITabl
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         table.isHidden = false
+        table.backgroundColor = .darkGray
         return table
     }()
     
@@ -38,6 +39,7 @@ class HomeView : UIViewController, HomeViewProtocol, UITableViewDelegate, UITabl
         tableView.delegate = self
         tableView.dataSource = self
         
+        self.title = "NASA Apods"
     }
     
     override func viewDidLayoutSubviews() {
@@ -63,6 +65,8 @@ class HomeView : UIViewController, HomeViewProtocol, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = apodList[indexPath.row].title
+        cell.backgroundColor = .darkGray
+        cell.textLabel?.textColor = .white
         return cell
     }
     
