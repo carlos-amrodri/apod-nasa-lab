@@ -24,17 +24,20 @@ class DetailView: UIViewController, DetailViewProtocol {
     @IBOutlet weak var apodImage: UIImageView!
     @IBOutlet weak var nasaBackImage: UIImageView!
     @IBOutlet var playerView : YTPlayerView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     var presenter: DetailPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        indicator.isHidden = false
+        indicator.startAnimating()
         presenter?.getDataLabels()
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         presenter?.getImage()
     }
 
@@ -48,6 +51,7 @@ class DetailView: UIViewController, DetailViewProtocol {
         DispatchQueue.main.async {
             self.apodImage.image = image
             self.playerView.isHidden = true
+            self.dismissIndicator()
             UIView.animate(withDuration: 0.8) {
                 self.nasaBackImage.alpha = 0
                 self.apodImage.isHidden = false
@@ -61,10 +65,16 @@ class DetailView: UIViewController, DetailViewProtocol {
     }
     
     func showPlayerView(with id: String){
+        dismissIndicator()
         playerView.load(withVideoId: id)
         nasaBackImage.isHidden = true
         apodImage.isHidden = true
         playerView.isHidden = false
+    }
+    
+    private func dismissIndicator(){
+        indicator.stopAnimating()
+        indicator.isHidden = true
     }
 
 }
